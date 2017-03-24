@@ -1,0 +1,41 @@
+RAG 2.0 3D Interactive Viewing Platform
+===============================================================================================================================================
+
+This is the documentation for the interactive visualization platform developed by the Takashima Group under the Research in Optics REU program at the College of Optical Sciences at the University of Arizona in summer 2016. 
+
+
+--Hardware Components--
+
+-2x Logitech c920 webcams
+-Arduino UNO
+-uFactory uArm robotic arm
+-Virtual Private Sever w/ static IP address
+-Nexus 5X (or any android phone with a gyroscope)
+-Computer
+
+
+--Software Components--
+
+-Android Studio project "Socket"
+-Visual Studio project "aberration_generator_controller"
+-Arduino project "Arm"
+-Python TCP server "VPSserver.py"
+-Shellscript "ffmpeg.sh"
+-BAT file "ffmpeg.bat"
+-FFmpeg (tested with version 20160803) (on both VPS and computer)
+-nginx rtmp module (tested with 1.9.15)
+
+
+Installation
+------------
+
+1. On the computer that will be used to control the Arduino UNO and the webcams, install FFmpeg and build the visual studio project. Place the ffmpeg.bat in the /bin directory of the FFmpeg install location.
+2. On the VPS, install FFmpeg and the nginx rtmp module (more detials on the latter here: https://obsproject.com/forum/resources/how-to-set-up-your-own-private-rtmp-server-using-nginx.50/). If using a static ffmpeg build, place the ffmpeg.sh file in the directory with the excecutable ffmpeg and ffplay files. 
+3. Install VLC for Android from the Google Play Store. Build the Android Studio project and run it on the Android smartphone by selecting Run -> run "app" and selecting the connected Android phone. For this, ADB (android debug bridge) must be enabled on the phone, google for how to do this if not already enabled.
+4. Connect the two webcams and the arduino UNO to the computer and run FFmpeg.bat. If this is running correcting, you should see encoding statistics in the cmd window.
+5. Check nginx is running by going to http://<ipOfVPS>/. If an nginx page loads, it is running.
+6. Run FFmpeg.sh on the VPS. If all is running correctly, you should see a similar statistics page within 10 seconds. Video should now be available to anyone connecting to rtmp://<ipOfVPS>/live/test. This can be tested by running ffplay with the commant "ffplay -probesize 32 -sync ext rtmp://<ipOfVPS>/live/test"
+7. On the VPS, run "VPSserver.py". Run the built program from aberration_generator_controller, and you should see that the VPS has notified you of a connection.
+8. On the android phone, go to the "socket" app and press "start streaming". The VPS should again show a connection, and the uArm controlled by the Arduino should move to its default position. You can control the arm by rotating the phone. 
+9. To view the video stream, press the "launch VLC" button and paste the URL into the streaming bar. Within 15 seconds the stream should start.
+

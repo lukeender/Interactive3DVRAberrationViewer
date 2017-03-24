@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ed9da5fd455149dbf4e3e36ee318fe0292c2be39">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_fe0a96a7495acf956329c619296cf56d6c99174e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0_eb9e6437b22a310ea127ad695ef30377709a8798\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0_b287f9e37a0a4a338b1b71830a9ad62b43007c76\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_62e9a74c3ad28be0c69eae2eed78eff79f455d48\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0_f8b49585744c531ef44b01eb830baf18f939c663\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\24.0.0\2943c74db6d4346ab8c6531adac91fa05c137c40\support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0_06ab0ab22527bedbe5fb2cfcc4546c95adab395b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6d1b86ac2263215d4f71e9fcc6e8bb2b01fd1c1f">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a4ca422fc4c508e59b28ad9d06ef681ad91a257e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0_145a9a0843938f993ffe421409975ee3f0e2806e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="C:\Users\RAG-PC\Desktop\Socket\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.0_531faac0651080aecc45a3b9c8511d74a1fc9e76\classes.dex" />
+    </item>
+
+</items>

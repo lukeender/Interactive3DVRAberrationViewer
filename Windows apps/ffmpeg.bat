@@ -1,0 +1,4 @@
+REM **To understand this script and what it does, please refer to these guides: https://trac.ffmpeg.org/wiki/StreamingGuide https://ffmpeg.org/ffmpeg-filters.html https://ffmpeg.org/pipermail/ffmpeg-user/2013-June/015662.html there are also some things which just fix errors I was getting and even I don't know what they do, like the -thread_queue_size option.**
+
+ffmpeg -y -thread_queue_size 512 -analyzeduration 0 -f dshow -video_size 640x480 -thread_queue_size 512 -rtbufsize 1000000k -ss 00:00:00.35 -video_device_number 0  -i video="Logitech HD Pro Webcam C920" -f dshow -video_size 640x480 -thread_queue_size 512 -rtbufsize 1000000k -video_device_number 1 -i video="Logitech HD Pro Webcam C920" -filter_complex "[1:v]crop=540:480,transpose=1[vid2];[0:v]crop=540:480,transpose=2,pad=iw*2:ih[vid1]; [vid1][vid2]overlay=W/2:0[vid]" -map [vid] -fflags nobuffer -pix_fmt yuv420p -vcodec libx264 -tune zerolatency -preset ultrafast -f rtp rtp://192.168.43.1:1234
+pause
